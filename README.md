@@ -1,7 +1,7 @@
 # WARP-CLI Installer
 ![App Screenshot](https://raw.githubusercontent.com/Sir-MmD/warp-cli/refs/heads/main/logo.png)
 ### About
-This is a simple script to install the Cloudflare WARP Linux Client (warp-cli). It uses Cloudflare's official repository
+This is a simple script to install the Cloudflare WARP Linux Client (warp-cli). It uses Cloudflare's official repository: https://pkg.cloudflareclient.com
 
 <div align="center">
 
