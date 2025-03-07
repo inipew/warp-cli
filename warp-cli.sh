@@ -21,6 +21,7 @@ check_host() {
         yum_based
     else
         echo "${RED}Package manager not supported${NC}"
+        exit
     fi
 }
 
