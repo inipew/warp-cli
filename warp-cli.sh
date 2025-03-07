@@ -25,16 +25,20 @@ check_host() {
 }
 
 apt_based() {
-    apt update && apt install -y curl gpg lsb-release apt-transport-https ca-certificates sudo
+    apt update
+    apt install -y curl gpg lsb-release apt-transport-https ca-certificates sudo
     curl -fsSL https://pkg.cloudflareclient.com/pubkey.gpg | sudo gpg --yes --dearmor --output /usr/share/keyrings/cloudflare-warp-archive-keyring.gpg
     echo "deb [signed-by=/usr/share/keyrings/cloudflare-warp-archive-keyring.gpg] https://pkg.cloudflareclient.com/ $(lsb_release -cs) main" | sudo tee /etc/apt/sources.list.d/cloudflare-client.list
-    apt update && apt -y install cloudflare-warp
+    apt update
+    apt -y install cloudflare-warp
 }
 
 yum_based() {
     curl -fsSl https://pkg.cloudflareclient.com/cloudflare-warp-ascii.repo | sudo tee /etc/yum.repos.d/cloudflare-warp.repo
-    yum check-update && yum install -y curl sudo coreutils
-    yum check-update && yum install -y cloudflare-warp
+    yum check-update
+    yum install -y curl sudo coreutils
+    yum check-update
+    yum install -y cloudflare-warp
 }
 
 warp_setup() {
