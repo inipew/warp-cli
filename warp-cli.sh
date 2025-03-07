@@ -58,7 +58,7 @@ warp_setup() {
 }
 
 root_check
-if warp-cli --help &> /dev/null; then
+if command -v warp-cli &> /dev/null; then
     echo "${CYAN}WARP-CLI is already installed!${NC}"
 else
     check_host
