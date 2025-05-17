@@ -15,7 +15,7 @@ This is a simple script to install the Cloudflare WARP Linux Client (warp-cli). 
 
 ### Installation
 ```bash
-bash -c "$(wget https://raw.githubusercontent.com/Sir-MmD/warp-cli/main/warp-cli.sh -O -)"
+bash -c "$(wget https://raw.githubusercontent.com/inipew/warp-cli/main/warp-cli.sh -O -)"
 ```
 ### Note
 This script sets the default mode of WARP to SOCKS5 and uses port 10808. If needed, you can change it using the ```warp-cli``` command
